@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Phones: no zoom (the touch controls take double taps and pinches), and the page under the notch (src/core/touch.ts
+         keeps the game and the controls in the safe area). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f0b1f" />
+    <!-- iPhone has no fullscreen for pages: added to the home screen, it opens without Safari's bars. -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Pocket Cosmos" />
     <title>Pocket Cosmos</title>
     <!-- The original has no app icon: a gold star on the UI's indigo. -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161033'/%3E%3Cpath d='M32 9l6.6 14.6 15.9 1.7-11.9 10.7 3.4 15.7L32 43.7l-14 8 3.4-15.7L9.5 25.3l15.9-1.7z' fill='%23ffd140'/%3E%3C/svg%3E" />
     <meta name="description" content="Pocket Cosmos: Special Lumbit Edition. A monster-catching JRPG with toon shading, in your browser." />
     <style>html,body{background:#0f0b1f;height:100%;margin:0;overflow:hidden}#app{background:#0f0b1f;position:fixed;inset:0}#screen{width:100%;height:100%;display:block}</style>
-  <script type="module" crossorigin src="./assets/index-CrS0GQ2M.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CpE97ESr.css">
+  <script type="module" crossorigin src="./assets/index-Q5-M5Kbi.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bnf-HVeG.css">
 </head>
 <body>
     <div id="app"><canvas id="screen"></canvas></div>
